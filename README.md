@@ -11,7 +11,8 @@ id first_name last_name country
 */
 ```
 **Delete Duplicates** 
-- SQL: delete where id of row_number() > 1
+- SQL: 
+  - delete where id of row_number() > 1
 - Python: 
   - key features: <br>`employee.drop_duplicates(subset = ['first_name', 'last_name', 'country'])`
   - all features: drop unique identifer first<br>`employee.drop('id', axis = 1).drop_duplicates()`
